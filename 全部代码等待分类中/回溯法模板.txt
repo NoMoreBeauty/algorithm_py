@@ -1,0 +1,10 @@
+def backtrack(A,re):
+	if A 满足条件:
+		re.append(A)
+	for i in 可选择的下一状态:
+		if 可以剪枝:
+			剪枝
+		A.append(i)
+		backtrack(A,re)
+		A.remove(i) #remove了没有关系，因为满足条件的项已经加入re了
+
